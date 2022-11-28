@@ -7,7 +7,6 @@ import Works from "./Works/Works";
 function Startpagina(){
     return(
         <div>
-             <p>StartPagina</p>
              <div>
                  <Home/>
                  <Works/>
