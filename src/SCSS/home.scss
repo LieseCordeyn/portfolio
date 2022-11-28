@@ -1,0 +1,12 @@
+@import 'Colors';
+
+#HomeContainer {
+    min-height: 100vh;
+    background-color: $homeColor;
+}
+
+@media (prefers-color-scheme: dark){
+    #HomeContainer {
+        background-color: $homeColorDark;
+    }
+}
