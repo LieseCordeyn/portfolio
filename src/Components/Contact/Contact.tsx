@@ -1,7 +1,11 @@
 import React from 'react'
 
 function Contact(){
-    return <p>contact</p>
+    return (
+        <div id='ContactContainer'>
+            <p>contact</p>
+        </div>
+    ) 
 }
 
 export default Contact
