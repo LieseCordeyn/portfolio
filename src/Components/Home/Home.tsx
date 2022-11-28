@@ -1,5 +1,7 @@
 import React from 'react';
 import { useNav } from '../../Hooks/useNav';
+import NavLink from '../Navigation/NavLink';
+import Foto from '../../assets/Liese.png'
 
 
 function Home(){
@@ -8,7 +10,12 @@ function Home(){
 
     return(
         <div id='HomeContainer' ref={homeRef}>
-             <p>Home</p>
+             <h1>Hi, I'm Liese Cordeyn</h1>
+             <h2>Full Stack Developper</h2>
+             <div>
+                <NavLink navLinkId="View More" scrollToId="WorksContainer"/> 
+             </div>
+              <img src={Foto} alt="" width="10px"/>
         </div>
     )
 }

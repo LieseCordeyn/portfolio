@@ -21,8 +21,10 @@ function NavLink({ navLinkId, scrollToId, navNumber}: NavLinkType) {
 		 	id={navLinkId} 
 			className={activeNavLinkId === navLinkId ? 'activeClass' : ''} 
 		 	onClick={handleClick}
-		>
-            <span id="navNumber">0{navNumber}. </span>
+		>	{
+			navNumber?  <span id="navNumber">0{navNumber}. </span> : ""
+		}
+           
 			{navLinkId}
 		</span>
 	);
