@@ -1,4 +1,6 @@
-function NavLink({ navLinkId, scrollToId, setActiveNavLinkId }: any) {
+import NavLinkType from "../../Type/NavLink";
+
+function NavLink({ navLinkId, scrollToId, setActiveNavLinkId }: NavLinkType) {
     const handleClick = () => {
 		setActiveNavLinkId(navLinkId);
         const input = document.getElementById(scrollToId)

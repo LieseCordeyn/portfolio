@@ -4,7 +4,7 @@ import NavLink from "./NavLink";
 function Navigation() {
     const navLinks = [
         {navLinkId: 'Home', scrollToId: 'HomeContainer'},
-        {navLinkId: 'Works', scrollToId: 'WorkContainer'},
+        {navLinkId: 'Works', scrollToId: 'WorksContainer'},
         {navLinkId: 'About', scrollToId: 'AboutContainer'},
         {navLinkId: 'Contact', scrollToId: 'ContactContainer'},
     ]
