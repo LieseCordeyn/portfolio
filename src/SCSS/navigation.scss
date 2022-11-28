@@ -1,0 +1,42 @@
+@import 'Colors';
+
+#navigation {
+    width: 100%;
+	position: sticky;
+	z-index: 10;
+	top: 0;
+	padding: 1em 0;
+	background-color: $background;
+	max-height: 4em;
+
+}
+
+#navigation span {
+	font-size: 18px;
+	transition: border-bottom 0.1s ease;
+	transition-delay: 0.15s;
+	margin: 1em;
+	padding-bottom: 0.3em;
+}
+
+#navigation span:hover {
+	cursor: pointer;
+	border-bottom: 2px solid $accentColor;
+}
+
+#navigation #navNumber {
+    margin: 0;
+    color: $accentColor;
+    font-style: italic;
+    font-weight: 300;
+}
+
+nav .activeClass  {
+	border-bottom: 2px solid $accentColor;
+}
+
+@media (prefers-color-scheme: dark) {
+    #navigation {
+      background-color: $backgroundDark;
+    } 
+  }
