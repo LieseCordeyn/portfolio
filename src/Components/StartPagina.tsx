@@ -4,17 +4,21 @@ import Contact from "./Contact/Contact";
 import Home from "./Home/Home";
 import Navigation from "./Navigation/navigation";
 import Works from "./Works/Works";
+import NavProvider from '../context/navContext';
+
 
 function Startpagina(){
     return(
         <div>
+            <NavProvider>
             <Navigation/>
-             <div>
-                 <Home/>
-                 <Works/>
-                 <About/>
-                 <Contact/>
-             </div>
+                <div>
+                    <Home/>
+                    <Works/>
+                    <About/>
+                    <Contact/>
+                </div>
+             </NavProvider>
         </div>
     )
 }

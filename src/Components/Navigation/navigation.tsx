@@ -9,8 +9,6 @@ function Navigation() {
         {navLinkId: 'Contact', scrollToId: 'ContactContainer', navNumber: 4},
     ]
 
-    const [activeNavLinkId, setActiveNavLinkId] = useState('Home');
-
 
     return (
         <nav id="navigation">
@@ -21,8 +19,7 @@ function Navigation() {
 			        navLinkId={navLinkId} 
 			        scrollToId={scrollToId} 
                     navNumber = {navNumber}
-			        activeNavLinkId={activeNavLinkId}
-			        setActiveNavLinkId={setActiveNavLinkId} 
+	
 		        />
 	      )}
 	    </nav>

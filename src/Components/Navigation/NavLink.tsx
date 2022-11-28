@@ -1,6 +1,11 @@
 import NavLinkType from "../../Type/NavLink";
+import { NavContext } from '../../context/navContext';
+import { useContext } from "react";
 
-function NavLink({ navLinkId, scrollToId, navNumber, activeNavLinkId, setActiveNavLinkId }: NavLinkType) {
+function NavLink({ navLinkId, scrollToId, navNumber}: NavLinkType) {
+
+    const {activeNavLinkId, setActiveNavLinkId} = useContext(NavContext)
+
     const handleClick = () => {
 		setActiveNavLinkId(navLinkId);
         const input = document.getElementById(scrollToId)
