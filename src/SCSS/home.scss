@@ -1,0 +1,55 @@
+@import 'Colors';
+
+#HomeContainer {
+    min-height: 93.6vh;
+    background-color: $homeColor;
+}
+
+#HomeContainer p {
+    margin-top: 0;
+}
+
+#HomeContainer h1 {
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    font-weight: 400;
+    font-size: 50pt;
+}
+
+#HomeContainer h2 {
+    color: $accentColor;
+    position: absolute;
+    top: 30%;
+    left: 21%;
+    font-weight: 500;
+    font-size: 35pt;
+}
+
+#HomeContainer #ViewMoreButton {
+    background-color: $accentColor;
+    padding: .2em .6em;
+    width: fit-content;
+    position: absolute;
+    top: 44%;
+    left: 38%;
+    font-style: italic;
+    font-size: 21pt;
+}
+
+#HomeContainer #ViewMoreButton:hover {
+    cursor: pointer;
+}
+
+#HomeContainer img {
+    position: absolute;
+    bottom: 0%;
+    right: 5%;
+    width: 40vw;
+}
+
+@media (prefers-color-scheme: dark){
+    #HomeContainer {
+        background-color: $homeColorDark;
+    }
+}
