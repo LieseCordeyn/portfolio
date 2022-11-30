@@ -12,7 +12,28 @@ function Navigation() {
 
     return (
         <nav id="navigation">
-	      {navLinks.map(
+            <div className="navWeb">
+            {navLinks.map(
+		    ({navLinkId, scrollToId, navNumber}) =>
+		        <NavLink 
+                    key={navLinkId}
+			        navLinkId={navLinkId} 
+			        scrollToId={scrollToId} 
+                    navNumber = {navNumber}
+	
+		        />
+	            )}
+            </div>
+          <div className="navbar">
+            <div className="container nav-container">
+                <input className="checkbox" type="checkbox" name="" id="" />
+                <div className="hamburger-lines">
+                <span className="line line1"></span>
+                <span className="line line2"></span>
+                <span className="line line3"></span>
+                </div>  
+            <div className="menu-items">
+            {navLinks.map(
 		    ({navLinkId, scrollToId, navNumber}) =>
 		        <NavLink 
                     key={navLinkId}
@@ -22,6 +43,9 @@ function Navigation() {
 	
 		        />
 	      )}
+            </div>
+            </div>
+        </div>
 	    </nav>
     )
 }
