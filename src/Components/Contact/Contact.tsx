@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNav } from '../../Hooks/useNav';
+import Heading from '../general/heading';
 
 
 function Contact(){
@@ -8,6 +9,7 @@ function Contact(){
 
     return (
         <div id='ContactContainer' ref={ContactRef}>
+            <Heading number={4} title="Contact"/>
             <p>contact</p>
         </div>
     ) 
