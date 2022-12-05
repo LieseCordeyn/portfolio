@@ -1,0 +1,30 @@
+@import 'Colors';
+
+.Heading {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid $text;
+    margin:0 6em;
+    align-items: center;
+}
+
+.Heading p {
+    font-size: 40pt;
+    width: fit-content;
+    margin: 0;
+    margin-bottom: .5em;
+    font-weight: 600;
+}
+
+.Heading p:first-of-type{
+    font-size: 25pt;
+    font-weight: 200;
+    font-style: italic;
+}
+
+@media (prefers-color-scheme: dark) {
+    .Heading {
+        border-bottom: 1px solid $textDark;
+    } 
+}
