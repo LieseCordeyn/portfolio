@@ -1,7 +1,7 @@
 @import 'Colors';
 
 #HomeContainer {
-    min-height: 93.6vh;
+    min-height: 100vh;
     background-color: $homeColor;
 }
 
@@ -11,19 +11,26 @@
 
 #HomeContainer h1 {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 12%;
     font-weight: 400;
-    font-size: 50pt;
+    font-size: 25pt;
 }
 
 #HomeContainer h2 {
     color: $accentColor;
     position: absolute;
     top: 30%;
-    left: 21%;
+    left: 13%;
     font-weight: 500;
-    font-size: 35pt;
+    font-size: 19pt;
+}
+
+#HomeContainer img {
+    position: absolute;
+    bottom: 0%;
+    right: 5%;
+    width: 100vw;
 }
 
 #HomeContainer #ViewMoreButton {
@@ -31,21 +38,41 @@
     padding: .2em .6em;
     width: fit-content;
     position: absolute;
-    top: 44%;
-    left: 38%;
+    top: 40%;
+    left: 13%;
     font-style: italic;
-    font-size: 21pt;
+    font-size: 15pt;
 }
 
-#HomeContainer #ViewMoreButton:hover {
-    cursor: pointer;
-}
+@media (min-width: 800px) {
 
-#HomeContainer img {
-    position: absolute;
-    bottom: 0%;
-    right: 5%;
-    width: 40vw;
+    #HomeContainer {
+        min-height: 93.6vh;
+    }
+
+    #HomeContainer h1 {
+        top: 20%;
+        font-size: 50pt;
+    }
+
+    #HomeContainer h2 {
+        left: 21%;
+        font-size: 35pt;
+    }
+
+    #HomeContainer #ViewMoreButton {
+        top: 44%;
+        left: 38%;
+        font-size: 21pt;
+    }
+
+    #HomeContainer #ViewMoreButton:hover {
+        cursor: pointer;
+    }
+
+    #HomeContainer img {
+        width: 40vw;
+    }
 }
 
 @media (prefers-color-scheme: dark){
