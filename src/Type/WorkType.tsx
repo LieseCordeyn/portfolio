@@ -1,9 +1,9 @@
 export default interface WorkType {
     _id: number,
     Title: string,
-    Categories: Array<String>,
+    Categories: Array<string>,
     Description: string,
     GithubLink:string,
-    ImageUrls: Array<String>,
+    ImageUrls: Array<string>,
     Tags: Array<String>
 }
