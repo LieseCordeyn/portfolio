@@ -5,22 +5,37 @@
     justify-content: space-between;
     flex-wrap: wrap;
     border-bottom: 1px solid $text;
-    margin:0 6em;
+    margin:0 2em;
     align-items: center;
 }
 
 .Heading p {
-    font-size: 40pt;
+    font-size: 30pt;
     width: fit-content;
     margin: 0;
     margin-bottom: .1em;
     font-weight: 600;
 }
 
+    
 .Heading p:first-of-type{
-    font-size: 25pt;
+    font-size: 20pt;
     font-weight: 200;
     font-style: italic;
+}
+
+@media (min-width: 800px) {
+    .Heading {
+        margin:0 6em;
+    }
+    
+    .Heading p {
+        font-size: 40pt;
+    }
+    
+    .Heading p:first-of-type{
+        font-size: 25pt;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
