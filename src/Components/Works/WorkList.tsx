@@ -5,14 +5,13 @@ import Work from "./Work"
 
 function WorkList(){
     const [works, setWorks] = useState(Array<WorkType>)
-    const [chosenWorks, setChosenWorks] = useState("Uitgelicht")
 
     useEffect(() => {
         worksService.fetchWorks()
             .then(Response => {
                 setWorks(Response)
             })
-    })
+    }, [])
 
     return(
     <div id="WorkLists">

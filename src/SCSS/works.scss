@@ -6,52 +6,35 @@
 }
 
 #WorkLists {
-    width: 75vw;
+    width: 82vw;
     margin: auto;
 }
 
 .works {
-    margin: 1.5em 0;
-    padding: 2em;
     border-bottom: 1px solid $lineColor;
     display: flex;
     justify-content: space-between;
     min-height: 25vh;
+    flex-wrap: wrap;
+    margin: 1.5em 0;
+    padding-bottom: 1em;
 }
 
 .works .infoWorks {
-    width: 20%;
-}
-
-.works .imageWorks {
-    width: 55%;
-    margin: 10px 40px;
-    text-align: center;
-}
-
-.works .imageWorks img{
-    width: 80%;
-    margin-bottom: 10px;
-}
-
-.works .descriptionWorks{
-    width: 25%;
-}
-
-.works .descriptionWorks div{
-    max-height: 20vh;
-    overflow-y: scroll;
-    margin-bottom: 20px;
-}
-
-.works .descriptionWorks a {
-    color: $text;
+    width: 100%;
 }
 
 .works .infoWorks p{
     font-size: 18pt;
     text-transform: uppercase;
-    margin-top: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.works .infoWorks div {
+    display: flex;
+    justify-content: space-around;
 }
 
 .works .infoWorks div p {
@@ -61,12 +44,81 @@
     background-color: $accentColor;
     width: fit-content;
     padding: 5px 10px;
-    margin: 10px 0;
+    margin: 10px 10px;
     font-weight: 300;
 }
 
+.works .imageWorks {
+    width: 100vw;
+    margin: 0;
+    text-align: center;
+}
 
+.works .imageWorks img{
+    width: 100%;
+    margin-bottom: 10px;
+}
 
+.works .descriptionWorks{
+    width: 100%;
+}
+
+.works .descriptionWorks div{
+    margin-bottom: 20px;
+}
+
+.works .descriptionWorks a {
+    color: $text;
+}
+
+@media (min-width: 800px) {
+
+#WorkLists {
+    width: 75vw;
+}
+
+.works {
+    padding: 2em;
+    min-height: 25vh;
+    flex-wrap: nowrap;
+}
+
+.works .infoWorks {
+    width: 20%;
+}
+
+.works .infoWorks p{
+    margin-top: 0;
+    text-align: left;
+}
+
+.works .infoWorks div {
+    display: inline-block;
+}
+
+.works .infoWorks div p {
+    margin: 10px 0;
+}
+
+.works .imageWorks {
+    width: 55%;
+    margin: 10px 40px;
+}
+
+.works .imageWorks img{
+    width: 80%;
+}
+
+.works .descriptionWorks{
+    width: 25%;
+}
+
+.works .descriptionWorks div{
+    max-height: 20vh;
+    overflow-y: scroll;
+}
+
+}
 
 @media (prefers-color-scheme: dark) {
     .works {
