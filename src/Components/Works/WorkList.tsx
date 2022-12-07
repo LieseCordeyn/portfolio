@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { worksService } from "../../Service/WorksService"
 import WorkType from "../../Type/WorkType"
+import Filter from "./filter"
 import Work from "./Work"
 
 function WorkList(){
@@ -15,6 +16,7 @@ function WorkList(){
 
     return(
     <div id="WorkLists">
+        <Filter/>
         {works.length > 0? works.map((x: WorkType) => {
             return(<Work key={x._id} _id={x._id} Title={x.Title} Categories={x.Categories} Description={x.Description} GithubLink={x.GithubLink} ImageUrls={x.ImageUrls} Tags={x.Tags}/>)
         })
