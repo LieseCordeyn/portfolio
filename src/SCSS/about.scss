@@ -1,22 +1,20 @@
 @import 'Colors';
+
+
 #AboutContainer {
     padding-top: 4em;
     padding-bottom: 3em;
 }
 
 #AboutContainer #Content {
-    display: flex;
-    justify-content: space-between;
     width: 82vw;
     margin: auto;
-    align-items: center;
     margin-top: 30px;
 }
 
 #introduction{
-    border-left: 1px solid $text;
-    padding-left: 30px;
-    width: 60%;
+    width: 100%;
+    border: none;
 }
 
 #introduction span {
@@ -25,7 +23,6 @@
 }
 
 #socials {
-    margin-left: 5em;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -33,6 +30,11 @@
 
 #socials {
     text-decoration: underline;
+}
+
+
+#socials section {
+    display: flex;
 }
 
 #socials a {
@@ -45,14 +47,32 @@
     height: 30px;
 }
 
-#socials section {
+@media (min-width: 800px) {
+
+#AboutContainer #Content {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#introduction{
+    border-left: 1px solid $text;
+    padding-left: 30px;
+    width: 60%;
+}
+
+#socials {
+    margin-left: 5em;
+}
+
 }
 
 @media (prefers-color-scheme: dark) {
+    @media (min-width: 800px) {
     #introduction{
         border-left: 1px solid $textDark;
     }
+}
 
     #socials a {
         color: $textDark;
