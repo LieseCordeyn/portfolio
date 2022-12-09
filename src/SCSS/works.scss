@@ -71,6 +71,30 @@
     color: $text;
 }
 
+#filter {
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid $text;
+    font-style: italic;
+    font-size: 15pt;
+    align-items: center;
+}
+
+#filter p {
+    margin: 0;
+    padding: 0;
+}
+
+#categories p{
+    margin-right: 30px;
+}
+
+#categories .activeClass {
+    color: $accentColor;
+}
+
 @media (min-width: 800px) {
 
 #WorkLists {
@@ -119,19 +143,7 @@
 }
 
 #filter {
-    margin-top: 30px;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    border-bottom: 1px solid $text;
-    font-style: italic;
     font-size: 24pt;
-    align-items: center;
-}
-
-#filter p {
-    margin: 0;
-    padding: 0;
 }
 
 #categories {
@@ -141,14 +153,6 @@
 
 #categories:hover {
     cursor: pointer;
-}
-
-#categories p{
-    margin-right: 30px;
-}
-
-#categories .activeClass {
-    color: $accentColor;
 }
 
 }
