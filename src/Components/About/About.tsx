@@ -1,6 +1,8 @@
 import React from 'react'
 import { useNav } from '../../Hooks/useNav';
 import Heading from '../general/heading';
+import Introduction from './introduction';
+import Socials from './Socials';
 
 
 function About(){
@@ -10,7 +12,10 @@ function About(){
     return (
         <div id='AboutContainer' ref={AboutRef}>
             <Heading number={3} title="About"/>
-            <p>About</p>
+            <div>
+                <Socials/>
+                <Introduction/>
+            </div>
         </div>
     )
 }
