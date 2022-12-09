@@ -1,0 +1,73 @@
+[
+    {"_id": "1",
+        "Title":"Final Show",
+        "Categories":["Featured","Final Works"],
+        "Description":"For the subject 'full projects IV' we, as second-year students, were in charge of highlighting the final works of the third-year students. For this project, I was mainly responsible for the frontend in which we creatively displayed the final works in the theme of the final show.",
+        "GithubLink":"https://github.com/EHB-MCT/full-projects-4-goat-frontend.git",
+        "ImageUrls":["https://i.pinimg.com/564x/42/e3/12/42e312c61a9c8fcec4258ef86d1d7dea.jpg"],
+        "Tags":["React","TypeScript"]
+    }, 
+        
+    {"_id":"2",
+        "Title":"Prototype: Data Scaling ",
+        "Categories":["Expert Lab"],
+        "Description":"This is the first prototype I made for the course 'expert lab'. With this prototype I tested around with how a database and website handles bigdata and how I can make a website work faster with big data. I looked for solutions like caching and paginaition and looked into problems such as the N+1 problem",
+        "GithubLink":"https://github.com/EHB-MCT/expert-lab-prototypes-LieseCordeyn.git",
+        "ImageUrls":["https://i.pinimg.com/564x/74/48/79/744879970d51c583baccde6e20ae3869.jpg"],
+        "Tags":["PHP","Symfony"]
+    }, 
+    
+    {"_id":"3",
+        "Title":"Prototype: Login systems ",
+        "Categories":["Expert Lab"],
+        "Description":"This is the second prototype I made for the course 'expert lab'. With this prototype I tested around with how I could make a login system with verification via email, roles, CRSF,... I tested this with the built in functions from symfony but I also tried to write one myself so that I understand the logic behind a login system",
+        "GithubLink":"https://github.com/EHB-MCT/expert-lab-prototypes-LieseCordeyn.git",
+        "ImageUrls":["https://i.pinimg.com/564x/a4/3f/21/a43f21258de83c26e28edab700f36c5b.jpg"],
+        "Tags":["PHP","Symfony"]
+    }, 
+    
+    {"_id":"4",
+        "Title":"Prototype: Quiz app",
+        "Categories":["Expert Lab"],
+        "Description":"This is the third prototype I made for the course 'expert lab'. With this prototype I tested around with how I could make a connection from symfony to react. I played around with the different options such as writing an own API or creating a react frontend directly to symfony but decided that it was better for me to work with an API. I also played around with how I can make an react webpage more interactive and animated",
+        "GithubLink":"https://github.com/EHB-MCT/expert-lab-prototypes-LieseCordeyn.git",
+        "ImageUrls":["https://i.pinimg.com/564x/b4/21/d8/b421d8fe9a700df1207a1a2f35ea5237.jpg"],
+        "Tags":["PHP","Symfony","React"]
+    } ,
+
+    {"_id":"5",
+        "Title":"Lekker van bij ons",
+        "Categories":["Featured","Final Works"],
+        "Description":"For the course 'frontend' we were tasked to create a new and better design for the website 'lekkervanbijons.be', this is the part where we had to work with Angular",
+        "GithubLink":"https://github.com/EHB-MCT/angular-course-project-LieseCordeyn",
+        "ImageUrls":["https://i.pinimg.com/564x/bc/cb/3d/bccb3d4d7d0c6dc06910f91afccfa60e.jpg"],
+        "Tags":["Angular","Typescript"]
+    },
+
+    {"_id":"6",
+        "Title":"Lekker van bij ons",
+        "Categories":["Final Works"],
+        "Description":"For the course 'frontend' we were tasked to create a new and better design for the website 'lekkervanbijons.be', this is the part where we had to work with React",
+        "GithubLink":"https://github.com/EHB-MCT/react-course-project-LieseCordeyn.git",
+        "ImageUrls":["https://i.pinimg.com/564x/cd/dc/0c/cddc0cf5efc6e6207f3c9f5322431a3b.jpg"],
+        "Tags":["React","Typescript"]
+    },
+
+    {"_id":"7",
+        "Title":"City of Books",
+        "Categories":["Final Works"],
+        "Description":"For the course 'web II' we were tasked to create webpack website with node and javascript. I created a website where people could save books and keep track of every book they have read",
+        "GithubLink":"https://github.com/EHB-MCT/web2-frontend-LieseCordeyn.git",
+        "ImageUrls":["https://i.pinimg.com/564x/8d/ac/bf/8dacbfbbd80ee43c0b1029ba85112f0a.jpg"],
+        "Tags":["Javascript","Node"]
+    } ,
+
+    {"_id":"8",
+        "Title":"Exam Manager",
+        "Categories":["Featured","Final Works"],
+        "Description":"For the course 'backend' I created a final work where teachers can easily make an exam with automatic solving",
+        "GithubLink":"https://github.com/EHB-MCT/backend-course-project-LieseCordeyn.git",
+        "ImageUrls":["https://i.pinimg.com/564x/e0/70/38/e0703886878dbca91577b21f131dbc15.jpg"],
+        "Tags":["PHP","Laravel"]
+    } 
+]
