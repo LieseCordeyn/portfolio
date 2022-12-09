@@ -1,3 +1,10 @@
+import { link } from 'fs'
+import download from '../../assets/download.svg'
+import email from '../../assets/email.svg'
+import github from '../../assets/github.svg'
+import linkedin from '../../assets/linkedin.svg'
+
+
 function Socials(){
 
     const onButtonClick = () => {
@@ -16,11 +23,23 @@ function Socials(){
     }
 
     return(
-        <div>
-            <a href="https://github.com/LieseCordeyn">Visit my Github</a>
-            <a href="https://www.linkedin.com/in/liese-cordeyn-58b3981b7/">Visit my LinkedIn</a>
-            <p onClick={onButtonClick}>Download my CV</p>
-            <a href = "mailto: liese.cordeyn@gmail.com">Send me a mail</a>
+        <div id="socials">
+            <section>
+                <img src={github} alt="github icon" />
+                <a href="https://github.com/LieseCordeyn">Visit my Github</a>
+            </section>
+            <section>
+                <img src={linkedin} alt="linkedin icon" />
+                <a href="https://www.linkedin.com/in/liese-cordeyn-58b3981b7/">Visit my LinkedIn</a>
+            </section>
+            <section>
+                <img src={download} alt="Download icon" />
+                <p onClick={onButtonClick}>Download my CV</p>
+            </section>
+            <section>
+                <img src={email} alt="email icon" />
+                <a href = "mailto: liese.cordeyn@gmail.com">Send me a mail</a>
+            </section>
         </div>
     )
 }

@@ -12,7 +12,7 @@ function About(){
     return (
         <div id='AboutContainer' ref={AboutRef}>
             <Heading number={3} title="About"/>
-            <div>
+            <div id='Content'>
                 <Socials/>
                 <Introduction/>
             </div>

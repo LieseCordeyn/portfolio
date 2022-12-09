@@ -1,3 +1,61 @@
+@import 'Colors';
 #AboutContainer {
-    min-height: 100vh;
+    padding-top: 4em;
+    padding-bottom: 3em;
 }
+
+#AboutContainer #Content {
+    display: flex;
+    justify-content: space-between;
+    width: 82vw;
+    margin: auto;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#introduction{
+    border-left: 1px solid $text;
+    padding-left: 30px;
+    width: 60%;
+}
+
+#introduction span {
+    color: $accentColor;
+    font-weight: 600;
+}
+
+#socials {
+    margin-left: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#socials {
+    text-decoration: underline;
+}
+
+#socials a {
+    color: $text;
+    margin: .5em 0;
+}
+
+#socials img {
+    margin: 10px 10px 0 5px;
+    height: 30px;
+}
+
+#socials section {
+    display: flex;
+}
+
+@media (prefers-color-scheme: dark) {
+    #introduction{
+        border-left: 1px solid $textDark;
+    }
+
+    #socials a {
+        color: $textDark;
+    }
+  
+  }
