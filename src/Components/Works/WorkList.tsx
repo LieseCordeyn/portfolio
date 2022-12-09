@@ -17,12 +17,13 @@ function WorkList(){
         //         setWorks(Response)
         //     })
 
-        setWorks(data)
-        setChosenWorks(works.filter((x: { Categories: string | string[] }) => x.Categories.includes(selectedFilter)))
-    }, [works, chosenWorks, selectedFilter])
+         setWorks(data)
+         setChosenWorks(works.filter((x: { Categories: string | string[] }) => x.Categories.includes(selectedFilter)))
+    }, [works])
 
     const handleChange = (filter: any) => {
         setSelectedFilter(filter)
+        setChosenWorks(works.filter((x: { Categories: string | string[] }) => x.Categories.includes(filter)))
     }
 
     return(
