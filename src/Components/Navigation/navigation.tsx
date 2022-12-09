@@ -1,4 +1,3 @@
-import { useState } from "react"
 import NavLink from "./NavLink";
 
 function Navigation() {
@@ -6,7 +5,6 @@ function Navigation() {
         {navLinkId: 'Home', scrollToId: 'HomeContainer', navNumber: 1},
         {navLinkId: 'Works', scrollToId: 'WorksContainer', navNumber: 2},
         {navLinkId: 'About', scrollToId: 'AboutContainer', navNumber: 3},
-        {navLinkId: 'Contact', scrollToId: 'ContactContainer', navNumber: 4},
     ]
 
 
