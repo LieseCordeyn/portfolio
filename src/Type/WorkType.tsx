@@ -1,5 +1,5 @@
 export default interface WorkType {
-    _id: number,
+    _id: string,
     Title: string,
     Categories: Array<string>,
     Description: string,

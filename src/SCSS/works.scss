@@ -50,6 +50,8 @@
 
 .works .imageWorks {
     width: 100vw;
+    max-height: 40vh;
+    overflow: hidden;
     margin: 0;
     text-align: center;
 }

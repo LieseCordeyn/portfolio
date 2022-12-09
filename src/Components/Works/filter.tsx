@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react"
-
 function Filter(props: { onFilter: (arg0: any) => void; filter: string }){
 
     const options = ["Featured", "Final Works", "Expert Lab"]

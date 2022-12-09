@@ -1,27 +1,28 @@
 import { useEffect, useState } from "react"
-import { worksService } from "../../Service/WorksService"
+//import { worksService } from "../../Service/WorksService"
 import WorkType from "../../Type/WorkType"
 import Filter from "./filter"
 import Work from "./Work"
+import data from "../../assets/data.json"
 
 function WorkList(){
     const [works, setWorks] = useState(Array<WorkType>)
     const [chosenWorks, setChosenWorks] = useState(Array<WorkType>)
-    let [selectedFilter, setSelectedFilter] = useState(String)
+    let [selectedFilter, setSelectedFilter] = useState("Featured")
 
 
     useEffect(() => {
-        setSelectedFilter("Featured")
-        worksService.fetchWorks()
-            .then(Response => {
-                setWorks(Response)
-                setChosenWorks(works.filter(x => x.Categories.includes("Featured")))
-            })
-    }, [])
+        // worksService.fetchWorks()
+        //     .then(Response => {
+        //         setWorks(Response)
+        //     })
+
+        setWorks(data)
+        setChosenWorks(works.filter((x: { Categories: string | string[] }) => x.Categories.includes(selectedFilter)))
+    }, [works, chosenWorks, selectedFilter])
 
     const handleChange = (filter: any) => {
         setSelectedFilter(filter)
-        setChosenWorks(works.filter(x => x.Categories.includes(filter)))
     }
 
     return(
