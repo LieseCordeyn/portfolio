@@ -1,3 +1,81 @@
+@import 'Colors';
+
+
 #AboutContainer {
-    min-height: 100vh;
+    padding-top: 4em;
+    padding-bottom: 3em;
 }
+
+#AboutContainer #Content {
+    width: 82vw;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#introduction{
+    width: 100%;
+    border: none;
+}
+
+#introduction span {
+    color: $accentColor;
+    font-weight: 600;
+}
+
+#socials {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#socials {
+    text-decoration: underline;
+}
+
+
+#socials section {
+    display: flex;
+}
+
+#socials a {
+    color: $text;
+    margin: .5em 0;
+}
+
+#socials img {
+    margin: 10px 10px 0 5px;
+    height: 30px;
+}
+
+@media (min-width: 800px) {
+
+#AboutContainer #Content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#introduction{
+    border-left: 1px solid $text;
+    padding-left: 30px;
+    width: 60%;
+}
+
+#socials {
+    margin-left: 5em;
+}
+
+}
+
+@media (prefers-color-scheme: dark) {
+    @media (min-width: 800px) {
+    #introduction{
+        border-left: 1px solid $textDark;
+    }
+}
+
+    #socials a {
+        color: $textDark;
+    }
+  
+  }
