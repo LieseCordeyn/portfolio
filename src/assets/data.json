@@ -51,5 +51,23 @@
         "GithubLink":"https://github.com/EHB-MCT/react-course-project-LieseCordeyn.git",
         "ImageUrls":["https://i.pinimg.com/564x/cd/dc/0c/cddc0cf5efc6e6207f3c9f5322431a3b.jpg"],
         "Tags":["React","Typescript"]
+    },
+
+    {"_id":"7",
+        "Title":"City of Books",
+        "Categories":["Final Works"],
+        "Description":"For the course 'web II' we were tasked to create webpack website with node and javascript. I created a website where people could save books and keep track of every book they have read",
+        "GithubLink":"https://github.com/EHB-MCT/web2-frontend-LieseCordeyn.git",
+        "ImageUrls":["https://i.pinimg.com/564x/8d/ac/bf/8dacbfbbd80ee43c0b1029ba85112f0a.jpg"],
+        "Tags":["Javascript","Node"]
+    } ,
+
+    {"_id":"8",
+        "Title":"Exam Manager",
+        "Categories":["Featured","Final Works"],
+        "Description":"For the course 'backend' I created a final work where teachers can easily make an exam with automatic solving",
+        "GithubLink":"https://github.com/EHB-MCT/backend-course-project-LieseCordeyn.git",
+        "ImageUrls":["https://i.pinimg.com/564x/e0/70/38/e0703886878dbca91577b21f131dbc15.jpg"],
+        "Tags":["PHP","Laravel"]
     } 
 ]
