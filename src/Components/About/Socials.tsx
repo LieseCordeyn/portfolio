@@ -1,4 +1,3 @@
-import { link } from 'fs'
 import download from '../../assets/download.svg'
 import email from '../../assets/email.svg'
 import github from '../../assets/github.svg'

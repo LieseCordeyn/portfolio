@@ -69,5 +69,14 @@
         "GithubLink":"https://github.com/EHB-MCT/backend-course-project-LieseCordeyn.git",
         "ImageUrls":["https://i.pinimg.com/564x/e0/70/38/e0703886878dbca91577b21f131dbc15.jpg"],
         "Tags":["PHP","Laravel"]
+    } ,
+
+    {"_id":"9",
+        "Title":"Prototype: OCR scanner",
+        "Categories":["Expert Lab"],
+        "Description":"For this prototype I created a webapp that can scan texts based on an uploaded/taken picture. I tested OCR with react and react native but after research I figured out that it was better for me to just use react",
+        "GithubLink":"https://github.com/EHB-MCT/expert-lab-prototypes-LieseCordeyn.git",
+        "ImageUrls":["https://i.pinimg.com/564x/3b/1f/e8/3b1fe873f7ea63a865326ecce08d3173.jpg"],
+        "Tags":["React", "React Native"]
     } 
 ]
