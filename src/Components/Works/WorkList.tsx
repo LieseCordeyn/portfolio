@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
-//import { worksService } from "../../Service/WorksService"
+import { worksService } from "../../Service/WorksService"
 import WorkType from "../../Type/WorkType"
 import Filter from "./filter"
 import Work from "./Work"
-import data from "../../assets/data.json"
+//import data from "../../assets/data.json"
 
 function WorkList(){
     const [works, setWorks] = useState(Array<WorkType>)
@@ -12,12 +12,12 @@ function WorkList(){
 
 
     useEffect(() => {
-        // worksService.fetchWorks()
-        //     .then(Response => {
-        //         setWorks(Response)
-        //     })
+        worksService.fetchWorks()
+            .then(Response => {
+                setWorks(Response)
+            })
 
-         setWorks(data)
+         //setWorks(data)
          setChosenWorks(works.filter((x: { Categories: string | string[] }) => x.Categories.includes(selectedFilter)))
     }, [works])
 
